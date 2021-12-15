@@ -35,7 +35,7 @@ Then('I am successfully logged in', () => {
 
 And('I see the correct user name', () => {
     cy.get('#welcome').invoke('text').then((text)=> {
-        cy.log('The user name is' , text)
+        cy.log('The user name is' , text.replace('Welcome',''))
     })
     
 })

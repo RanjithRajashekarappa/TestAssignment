@@ -1,6 +1,5 @@
 import { Given } from "cypress-cucumber-preprocessor/steps";
 
-//const url = 'https://opensource-demo.orangehrmlive.com/index.php/auth/login'
 var username
 var password
 
@@ -8,8 +7,8 @@ Given('I open test website', () => {
   cy.visit('/')
 })
 
-Then('I see "OrangeHRM" in the title', () => {
-    cy.title().should('include', 'OrangeHRM')
+Then('I see {string} in the title', (title) => {
+    cy.title().should('include', title)
   })
 
   When('I fetch the valid test credentials from website', () => {

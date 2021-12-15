@@ -1,11 +1,11 @@
 import { Given } from "cypress-cucumber-preprocessor/steps";
 
-const url = 'https://opensource-demo.orangehrmlive.com/index.php/auth/login'
+//const url = 'https://opensource-demo.orangehrmlive.com/index.php/auth/login'
 var username
 var password
 
 Given('I open test website', () => {
-  cy.visit(url)
+  cy.visit('/')
 })
 
 Then('I see "OrangeHRM" in the title', () => {
